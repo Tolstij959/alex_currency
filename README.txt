@@ -1,1 +1,1 @@
-Режим вывода команд на экран (ECHO) включен.
+This is a new repository of currency.alex
