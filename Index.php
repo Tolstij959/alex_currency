@@ -1,5 +1,7 @@
+<link rel="stylesheet" href="style.css" type="text/css">
 <?php
 require_once 'config.php';
+
 
 error_reporting(-1);
 ini_set('display_errors',1);
@@ -21,7 +23,11 @@ $page = (isset($_GET['page']) ? $_GET['page'] : 'main');
 </header>
 
 <?php include basename($page).'.php'; ?>
-<?php include 'currency.php'; ?>
+<ul>
+    <?php 
+    include 'currency.php'; 
+?>
+</ul>
 
 <footer>
     Снова здорово !
