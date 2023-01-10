@@ -1,8 +1,8 @@
-<link rel="stylesheet" href="style.css" type="text/css">
+<link rel="stylesheet" href="styles.css" type="text/css">
+<link type="image/x-icon" href="/favi2.png" rel="shortcut icon">
+<link type="Image/x-icon" href="/favi2.png" rel="icon">
 <?php
 require_once 'config.php';
-
-
 error_reporting(-1);
 ini_set('display_errors',1);
 header('Content-Type: text/html; charset=utf-8');
@@ -23,14 +23,20 @@ $page = (isset($_GET['page']) ? $_GET['page'] : 'main');
 </header>
 
 <?php include basename($page).'.php'; ?>
-<ul>
+<button> 
+    <a href='VK_Authorisation.php'>Авторизуйся через ВК</a>
+</button>
+<h2>
+    <ul>
     <?php 
+    
     include 'currency.php'; 
-?>
-</ul>
-
+    ?>
+    </ul>
+</h2>
+</body>
 <footer>
     Снова здорово !
 </footer>
-</body>
+
 </html>
